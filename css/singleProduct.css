@@ -14,7 +14,6 @@
 .leftImages{
     display: flex;
     flex-direction: column;
-    margin: auto;
 }
 .product-images img{
     width: 95px;
@@ -25,7 +24,7 @@
     background-color: #F9F8F8;
     border-radius: 30px;
     width: 165px;
-    margin: 0.2rem 0;
+    margin: 0.2rem 0.5rem;
     margin-left: 8rem;
 }
 .rightImage{
