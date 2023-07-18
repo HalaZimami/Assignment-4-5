@@ -1,0 +1,143 @@
+.contain{
+    background-color: #F9F8F8;
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+.services-t{
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #274C5B;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+.grow{
+    color: #7EB693;
+    font-family: 'Allura', cursive;
+}
+.service-content{
+    display: flex;
+    margin: 2%;
+}
+.l-img{
+    text-align:right;
+    margin-right: 6.5%;
+}
+.head-rl{
+    margin-right: 6.5%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align:right;
+    color: #274C5B;
+    margin-top: -1.3rem;
+}
+.services-p{
+    font-size: 1.4rem;
+    margin-top: -1.3rem;
+    color: #525c60c5;
+}
+.service{
+    width: 43%;
+}
+.head-rr{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #274C5B;
+    margin-top: -1.3rem;
+}
+.services-l{
+    flex: 16;
+}
+.services-r{
+    flex: 7;
+    margin-left: 5%;
+}
+.img{
+    flex: 1;
+    margin-left: -30%;
+    margin-top: -12%;
+}
+
+@media screen and (max-width: 600px) {
+    .services-t{
+        font-size: 1.4rem;
+        /* white-space:nowrap; */
+        text-align: center;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .grow{
+        margin-left: 100%;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+    }
+    .img{
+        display: none;
+    }
+    .service-content{
+        flex-direction: column;
+    }
+    .serv{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+    }
+    .serv p{
+        font-size: 1.4rem;
+    }
+    .service{
+        width: 100%;
+        margin: auto;
+        margin-bottom:0;
+    }
+    .l-img{
+        text-align: center;
+        margin-right: 0;
+    }
+    .head-rl{
+        margin-right:0;
+        margin-top: 0;
+        text-align: center;
+    }
+    }
+/*     
+@media screen and (max-width: 1024px) {
+    .services-t{
+        font-size: 2rem;
+        white-space:nowrap;
+        text-align: center;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .grow{
+        font-size: 2rem;
+    }
+    .img{
+        display: none;
+    }
+    .service-content{
+        flex-direction: column;
+    }
+    .serv{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .service{
+        width: 100%;
+        margin: auto;
+        margin-bottom:0;
+    }
+    .l-img{
+        text-align: center;
+        margin-right: 0;
+    }
+    .head-rl{
+        margin-right:0;
+        margin-top: 0;
+        text-align: center;
+    }
+    } */

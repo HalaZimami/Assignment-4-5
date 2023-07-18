@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.cart-c {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: white;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+.active .cart-c {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.cart-c h1 {
+    color: black;
+    font-weight: 1.4rem;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-c .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.cart-c .checkOut div {
+    background-color: #7EB693;
+    color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carcart-ct .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: black;
+}
+
+.listCard li {
+    display: grid;
+    color: black;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    background-color: rgba(0, 0, 0, 0.971);
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: black;
+    row-gap: 10px;
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+}
+
+.listCard li button {
+    background-color: #6c584c1d;
+    border: none;
+}
+
+.listCard .count {
+    margin: 0 10px;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1C1F25;
+    color: #fff;
+}
+.pname-cart, .pprice-cart{
+    font-size: 1.4rem;
+}
+.closeShopping, .total, .count{
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .active .cart-c {
+        left: calc(110% - 450px);
+    }
+}

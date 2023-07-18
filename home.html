@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loadMore.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- //Head navbar -->
+    <header>
+        <div class="topnav">
+            <img class="logo" src="images/Logo.png" alt="logo" width="318" height="83">
+        </div>
+        <nav class="menu">
+            <ul class="navbar">
+                <ul>
+                    <a href="home.html">
+                        <li class="navbar-h">Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li class="navbar-h">Shop</li>
+                    </a>
+                    <a href="services.html">
+                        <li class="navbar-h">Services</li>
+                    </a>
+                </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="search">
+                <input class="search-input" type="search" placeholder="  search">
+                <img src="images/search.png" alt="search" class="searchimg">
+            </div>
+            <div class="icons2">
+                <div class="cart-dropdown shopping">
+                    <img class="cart-img" src="images/shoppingbag.png" alt="cart" width="35"
+                        height="35" />
+                    <div class="red">
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+                <div class="profile" width="113" height="20px">
+                    <img src="images/profile.png" alt="profile" width="38" height="38">
+                    <p class="pheader">Profile</p>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="images/more.png" alt="" width="35" height="35" />
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="home.html">Home</a>
+                        <a href="products.html">Shop</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Offers/Ads section -->
+    <div class="offers">
+        <a href="products.html">
+            <div class="ads ad1" style="background-image: url('images/ads1.png');">
+                <p class="p-ads"> <span class="natural">Natural!!</span> <br> Get Garden <br> Coffee</p>
+            </div>
+        </a>
+        <a href="products.html">
+            <div class="ads ad2" style="background-image: url('images/ads2.png');">
+                <p class="offer"> <span class="natural" style="color: #7EB693;">Offer!!</span>
+                    <br> Get 10% off<br>
+                    on Coffee Beans
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Coffee categories section -->
+    <div class="categories">
+        <p class="categories-1">What We Offer For You</p>
+        <a href="arabica.html">
+            <div class="catigories-2">
+                <div class="catigory1 catigory">
+                    <img src="images/arabica.png" alt="">
+                    <p class="c-paragraph">Arabica Coffee <br> Beans</p>
+                </div>
+        </a>
+        <a href="robusta.html">
+            <div class="catigory2 catigory">
+                <img src="images/robusta.png" alt="">
+                <p class="c-paragraph">Robusta Coffee <br> Beans</p>
+            </div>
+        </a>
+        <a href="liberica.html">
+            <div class="catigory3 catigory">
+                <img src="images/liberica.png" alt="">
+                <p class="c-paragraph">Liberica Coffee <br> Beans</p>
+            </div>
+        </a>
+        <a href="excelsa.html">
+            <div class="catigory4 catigory">
+                <img src="images/excelsa.png" alt="">
+                <p class="c-paragraph">excelsa Coffee <br> Beans</p>
+            </div>
+        </a>
+    </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Bestsellers section -->
+    <section>
+        <div class="bestsellers container">
+            <div class="top-bestseller">
+                <a href="products.html">
+                    <p class="all-products">Shop all products</p>
+                </a>
+                <p class="title-bestsellers"><span class="shop">Shop</span><br>Our Bestsellers</p>
+            </div>
+            <div class="list cards">
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+
+        <!-- //Cart section -->
+    <div class="cart-c">
+        <h1>Cart</h1>
+        <ul class="listCard">
+
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+    
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Load more button section -->
+    <script>
+        $(document).ready(function () {
+            $(".card").slice(0, 8).show();
+            $("#loadMore").on("click", function (e) {
+                e.preventDefault();
+                $(".card:hidden").slice(0, 8).slideDown();
+                if ($(".card:hidden").length === 0) {
+                    $("#loadMore").text(" ").addClass("noContent");
+                }
+            });
+        })
+    </script>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Reviews section -->
+    <div class="reviews">
+        <div class="comment-content" style="background-image: url('images/comment-background1.png');">
+            <p class="comments">What We Offer For You</p>
+            <img class="img1" src="images/personal-img.png" alt="personal-img">
+            <img class="img2" src="images/Star-products.png" alt="stars">
+            <p class="comment-p">Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply
+                dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been.</p>
+            <p class="reviewer">Sara Taylor</p>
+            <img class="img3" src="images/Navigation.png" alt="Navigation">
+        </div>
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Features section -->
+    <div class="features">
+        <img src="images/organic.png" alt="organic" class="feature">
+        <img src="images/nproducts.png" alt="nproducts" class="feature">
+        <img src="images/norders.png" alt="norders" class="feature">
+        <img src="images/nexperience.png" alt="nexperience" class="feature">
+    </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Email Subscribtion section -->
+    <div class="sub">
+        <div class="sub-photo" style="background-image: url('images/footer.png');">
+            <p class="p-sub">Subscribe to our Newsletter</p>
+            <p class="sub-media" style="display: none;">Subscribe</p>
+            <p class="sub-media" style="display: none;">to our</p>
+            <p class="sub-media" style="display: none;">Newsletter</p>
+            <div class="form-sub">
+                <input type="text" class="input-sub" placeholder="  Your Email Address">
+                <button class="button-">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Footer section -->
+    <footer>
+        <div class="footer-set">
+            <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
+            <nav class="footer-m">
+                <ul class="navbar">
+                    <li class="navbar-f">About Us</li>
+                    <a href="contactUs.html">
+                        <li class="navbar-f">Contact Us</li>
+                    </a>
+                    <li class="navbar-f">Policy & Privacy</li>
+                </ul>
+            </nav>
+            <div class="icons-footer">
+                <img class="media" src="images/instagram.png" alt="">
+                <img class="media" src="images/facebook.png" alt="">
+                <img class="media" src="images/twitter.png" alt="">
+                <img class="media" src="images/pintrest.png" alt="">
+            </div>
+        </div>
+        <p class="rights">
+            © CoffeeBeans.com, Inc. All rights reserved.
+        </p>
+    </footer>
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //JavaScript files -->
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

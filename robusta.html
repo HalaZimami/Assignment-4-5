@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loadMore.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- //Header section -->
+    <header>
+        <div class="topnav">
+            <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
+        </div>
+        <nav class="menu">
+            <ul class="navbar">
+                <ul>
+                    <a href="home.html">
+                        <li class="navbar-h">Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li class="navbar-h">Shop</li>
+                    </a>
+                    <a href="services.html">
+                        <li class="navbar-h">Services</li>
+                    </a>
+                </ul>
+        </nav>
+        <div class="icons">
+
+            <div class="search">
+                <input class="search-input" type="search" placeholder="  search">
+                <img src="images/search.png" alt="search" class="searchimg">
+            </div>
+
+            <div class="icons2">
+                <div class="cart-dropdown shopping">
+                    <img class="cart-img" src="images/shoppingbag.png" alt="cart" width="35"
+                        height="35" />
+                    <div class="red">
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+                <div class="profile" width="113" height="20px">
+                    <img src="images/profile.png" alt="cart" width="38" height="38">
+                    <p class="pheader">Profile</p>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="../Assignment 4/images/more.png" alt="" width="35" height="35" />
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="home.html">Home</a>
+                        <a href="products.html">Shop</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Products section -->
+    <section class="all">
+        <div class="container">
+            <div class="top-bestseller">
+                <a href="products.html">
+                    <p class="all-products">All products</p>
+                </a>
+                <p class="title-bestsellers"><span class="shop">Shop</span><br>Robusta Coffee Beans</p>
+            </div>
+            <div class="list cards">
+            </div>
+        </div>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+        <!-- //Cart section -->
+        <div class="cart-c">
+            <h1>Cart</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Load more button section -->
+    <script>
+        $(document).ready(function () {
+            $(".card").slice(0, 8).show();
+            $("#loadMore").on("click", function (e) {
+                e.preventDefault();
+                $(".card:hidden").slice(0, 8).slideDown();
+                if ($(".card:hidden").length === 0) {
+                    $("#loadMore").text(" ").addClass("noContent");
+                }
+            });
+
+        })
+    </script>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Email Subscribtion section -->
+    <div class="sub">
+        <div class="sub-photo" style="background-image: url('images/footer.png');">
+            <p class="p-sub">Subscribe to our Newsletter</p>
+            <div class="form-sub">
+                <input type="text" class="input-sub" placeholder="  Your Email Address">
+                <button class="button-">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //Footer section -->
+    <footer>
+        <div class="footer-set">
+            <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
+            <nav class="footer-m">
+                <ul class="navbar">
+                    <li class="navbar-f">About Us</li>
+                    <a href="contactUs.html">
+                        <li class="navbar-f">Contact Us</li>
+                    </a>
+                    <li class="navbar-f">Policy & Privacy</li>
+                </ul>
+            </nav>
+
+            <div class="icons-footer">
+                <img class="media" src="images/instagram.png" alt="">
+                <img class="media" src="images/facebook.png" alt="">
+                <img class="media" src="images/twitter.png" alt="">
+                <img class="media" src="images/pintrest.png" alt="">
+            </div>
+        </div>
+        <p class="rights">
+            © CoffeeBeans.com, Inc. All rights reserved.
+        </p>
+    </footer>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //JavaScript files -->
+    <script src="js/Robusta.js"></script>
+
+</body>
+
+</html>

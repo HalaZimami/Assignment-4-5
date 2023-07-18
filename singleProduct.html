@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Damion&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/singleProduct.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/loadMore.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- //Header section -->
+    <header>
+        <div class="topnav">
+            <img class="logo" src="images/Logo.png" alt="logo" width="300px" width="318" height="83">
+        </div>
+        <nav class="menu">
+            <ul class="navbar">
+                <ul>
+                    <a href="home.html">
+                        <li class="navbar-h">Home</li>
+                    </a>
+                    <a href="products.html">
+                        <li class="navbar-h">Shop</li>
+                    </a>
+                    <a href="services.html">
+                        <li class="navbar-h">Services</li>
+                    </a>
+                </ul>
+        </nav>
+        <div class="icons">
+
+            <div class="search">
+                <input class="search-input" type="search" placeholder="  search">
+                <img src="images/search.png" alt="search" class="searchimg">
+            </div>
+
+            <div class="icons2">
+                <div class="cart-dropdown shopping">
+                    <img class="cart-img" src="images/shoppingbag.png" alt="cart" width="35"/>
+                    <div class="red">
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+                <div class="profile" width="113" height="20px">
+                    <img src="images/profile.png" alt="cart" width="38" height="38">
+                    <p class="pheader">Profile</p>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <img src="../Assignment 4/images/more.png" alt="" width="35" height="35" />
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="home.html">Home</a>
+                        <a href="products.html">Shop</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+  <!------------------------------------------------------------------------------------------------------------>
+
+  <!-- //Single product section -->
+    <section class="product-container">
+
+        <div class="up">
+            <div class="images">
+                <div class="leftImages">
+                    <div class="product-images"><img class="p-image" src="images/product.png" alt=""></div>
+                    <div class="product-images"><img src="images/product.png" alt=""></div>
+                    <div class="product-images"><img src="images/product.png" alt=""></div>
+                    <div class="product-images"><img src="images/product.png" alt=""></div>
+                </div>
+                <div class="rightImage">
+                    <img class="r-image" src="images/product.png" alt="">
+                </div>
+            </div>
+
+            <div class="p-description">
+                <div class="head">
+                    <p class="p-name title">Arabica Coffee Beans</p>
+                    <div class="head-icons">
+                        <img src="images/single-heart.png" alt="" width="40%">
+                        <img src="images/share.png" alt="" width="40%">
+                    </div>
+                </div>
+                <img class="stars" src="images/single-stars.png" alt="" width="30%">
+                <p class="s-price" style="font-size: 2.5rem; font-weight: bold;"><span
+                        style="color: rgba(128, 128, 128, 0.548); text-decoration: line-through;">$20</span>
+                    $13</p>
+                <p class="s-desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ex voluptate sit saepe quam
+                    minus nulla doloremque praesentium optio corporis quisquam iusto reprehenderit accusantium nam,
+                    vero ea magni consequuntur aut.
+                </p>
+                <button class="button-">Add To Cart</button>
+            </div>
+        </div>
+        <div class="down">
+            <div id="topUploadDocumentation">
+                <section class="attributeDocumentation">
+                    <h3 class="d-name">Description</h3>
+                    <section class="hiddenContent details">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corporis natus laborum
+                            temporibus adipisci
+                            quis quod modi, molestias quibusdam asperiores, ducimus mollitia! Veritatis voluptatum
+                            mollitia sapiente
+                            tempora non dolore voluptates.</p>
+                    </section>
+                </section>
+                <section class="attributeDocumentation">
+                    <h3 class="d-name">Details</h3>
+                    <section class="hiddenContent details">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus earum molestiae quam
+                            quae,
+                            quisquam sequi quibusdam qui. Laborum alias saepe ab ullam facilis atque, repellendus id
+                            exercitationem
+                            provident, eligendi distinctio!</p>
+                        <section class="hiddenContent">
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+    <!-- //Recommendations section -->
+    <section class="recommends">
+        <p class="rec-title">
+            YOU MIGHT ALSO LIKE
+        </p>
+        <hr>
+        <div class="list cards">
+
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------------------------------>
+        
+        <!-- //Load more section -->
+        <script>
+            $(document).ready(function () {
+                $(".card").slice(0, 4).show();
+                $("#loadMore").on("click", function (e) {
+                    e.preventDefault();
+                    $(".card:hidden").slice(0, 4).slideDown();
+                    if ($(".card:hidden").length === 0) {
+                        $("#loadMore").text(" ").addClass("noContent");
+                    }
+                });
+
+            })
+        </script>
+    
+    <!------------------------------------------------------------------------------------------------------------>
+        
+        <!-- //Cart section -->
+        <div class="cart-c">
+            <h1>Cart</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+        <br>
+
+  <!------------------------------------------------------------------------------------------------------------>
+        <!-- //Email Subscribtion -->
+        <div class="sub">
+            <div class="sub-photo" style="background-image: url('images/footer.png');">
+                <p class="p-sub">Subscribe to our Newsletter</p>
+                <div class="form-sub">
+                    <input type="text" class="input-sub" placeholder="  Your Email Address">
+                    <button class="button-">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!------------------------------------------------------------------------------------------------------------>
+
+  <!-- //Footer section -->
+    <footer>
+        <div class="footer-set">
+            <img class="footer-logo" src="images/footer-logo.png" alt="logo" height="100">
+            <nav class="footer-m">
+                <ul class="navbar">
+                    <li class="navbar-f">About Us</li>
+                    <a href="contactUs.html">
+                        <li class="navbar-f">Contact Us</li>
+                    </a>
+                    <li class="navbar-f">Policy & Privacy</li>
+                </ul>
+            </nav>
+
+            <div class="icons-footer">
+                <img class="media" src="images/instagram.png" alt="">
+                <img class="media" src="images/facebook.png" alt="">
+                <img class="media" src="images/twitter.png" alt="">
+                <img class="media" src="images/pintrest.png" alt="">
+            </div>
+        </div>
+        <p class="rights">
+            © CoffeeBeans.com, Inc. All rights reserved.
+        </p>
+    </footer>
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- //JavaScript files -->
+    <script src="js/singleProduct.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
