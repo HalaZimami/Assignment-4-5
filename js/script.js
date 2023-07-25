@@ -1,25 +1,29 @@
+
 //Get Reference for both the Forms
 const SignUpForm = document.getElementById('SignUpForm');
-const LoginForm = document .getElementById('LoginForm');
+// const LoginForm = document .getElementById('LoginForm');
+
 //Event Listener for SignUp
 SignUpForm.addEventListener('submit',(e)=>{e.preventDefault();
+    // SignUpForm.onclick(window.location.href = "home.html")
     const UserName1 = document.getElementById('SignUpUserName').value;
-    const UserEmail1 = document.getElementById('SignUpUserEmail').value;
+    const Email1 = document.getElementById('SignUpEmail').value;
     const Password1 = document.getElementById('SignUpPassword').value;
 //Store the Information in IndexedDB
-SaveDataToIndexedDB(UserName1 , UserEmail1, Password1);
-    window.location.href = "signin.html"
+SaveDataToIndexedDB(UserName1,Email1, Password1);
 });
+
 //Event Listener for Login
-LoginForm.addEventListener('submit',(e) =>{e.preventDefault();
-    const UserEmail2 = document.getElementById('LoginUserEmail').value;
-    const Password2 = document.getElementById('LoginPassword').value;
-    //Read the Information from IndexedDB
-CheckDataInIndexedDB(UserEmail2,Password2);
-});
+// LoginForm.addEventListener('submit',(e) =>{e.preventDefault();
+//     const UserName2 = document.getElementById('LoginUserName').value;
+//     const Password2 = document.getElementById('LoginPassword').value;
+//     //Read the Information from IndexedDB
+// CheckDataInIndexedDB(UserName2,Password2);
+// });
+
 //Function to Store Data in IndexedDB
-function SaveDataToIndexedDB(UserName, Email, Password)
-{   const User = {username: UserName, email: Email , password: Password};
+function SaveDataToIndexedDB(UserName,Email, Password)
+{   const User = {username: UserName,email:Email, password: Password};
     const request = window.indexedDB.open('UserDB',1);
     request.onerror = (event)=>
     {console.error('Sorry. Error Creating IndexedDB Database');};
@@ -29,7 +33,10 @@ function SaveDataToIndexedDB(UserName, Email, Password)
         const objectstore = transaction.objectStore('Users');
         const addUserRequest = objectstore.add(User);
         addUserRequest.onsuccess = ()=>
-        {console.log('User Data Saved Successfully!');};
+        {
+            window.location.href = "signin.html";
+            // console.log('User Data Saved Successfully!');
+        };
         transaction.onsuccess = ()=>{db.close();};
     };
     request.onupgradeneeded=(event)=>
